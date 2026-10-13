@@ -44,8 +44,8 @@ Authorization: token 13c64471b4cdca7573b3f37e6b5501c775cc4b5b
 
 {
     "title":"medicine",
-    "amount":4000,
-    "category":"FOOD",
+    "amount":400,
+    "category":"TRAVEL",
     "payment_method":"upi"
 
 
@@ -67,7 +67,7 @@ Authorization: token 13c64471b4cdca7573b3f37e6b5501c775cc4b5b
 {
   "id": 1,
   "title": "med",
-  "amount": "4000.00",
+  "amount": "40.00",
   "category": "HEALTH",
   "priority": "need",
   "payment_method": "upi",
@@ -80,6 +80,13 @@ Authorization: token 13c64471b4cdca7573b3f37e6b5501c775cc4b5b
 #for deleting
 ###
 DELETE http://127.0.0.1:8000/v1/spending/expense/3/
+Accept: application/json
+Authorization: token 13c64471b4cdca7573b3f37e6b5501c775cc4b5b
+
+
+#api cal for total amount
+###
+GET http://127.0.0.1:8000/v1/spending/expense/summery/
 Accept: application/json
 Authorization: token 13c64471b4cdca7573b3f37e6b5501c775cc4b5b
 
